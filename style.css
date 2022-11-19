@@ -1,0 +1,108 @@
+*, *::before, *::after { box-sizing: border-box; padding: 0}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desat-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --daark-mod-cyan: hsl(168, 34%, 41%);
+    --white: hsl(0, 0%, 100%);
+    --gray-blue: hsl(210, 4%, 67%);
+    -dark-gray-blue: hsl(232, 10%, 55%);
+    --very-dark-gray-blue: hsl(213, 9%, 39%);
+    --very-dark-desat-blue: hsl(212, 27%, 19%);
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Fraunces', serif; */
+    font-size: 18px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 2em;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+    padding: 2em 0;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1440px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+header .container {
+    width: 90%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overlay {
+    inset: 0;
+    background-color: var(--very-dark-blue);
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list_group {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav_item {
+    cursor: pointer;
+}
+
+
+/* hamburger */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--very-dark-blue);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero_mobile {
+    display: none;
+}
+
+
+/* hero section */
+.hero {
+    background-image: url('/images/desktop/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
