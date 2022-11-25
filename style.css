@@ -24,8 +24,8 @@ body {
     padding: 0;
 }
 
-.attribution { font-size: 11px; text-align: center; margin-top: 2em;}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; margin-top: 2em; color: var(--dark-desat-cyan);}
+.attribution a { color: var(--dark-mod-cyan); }
 
 .container {
     padding: 1em 0;
@@ -92,6 +92,11 @@ header .container {
     border-radius: 20px;
     font-weight: 700;
     font-size: .7rem;
+}
+
+.contact_btn:hover {
+    background-color: rgba(255, 255, 255, 0.289);
+    color: var(--white);
 }
 
 /* hamburger */
@@ -269,7 +274,7 @@ header .container {
 }
 
 .testimonial_section {
-    padding: 4em 0;
+    padding: 5em 0;
 }
 
 .testimonial_heading {
@@ -284,13 +289,13 @@ header .container {
 .testimonial_flex {
     display: flex;
     width: 75%;
-    margin: 0 auto;
+    margin: 2.5em auto 2em;
     gap: 1.2em;
 }
 
 .testimonial {
     text-align: center;
-    padding: 2em 0;
+    padding-top: 2em;
 }
 
 .testimonial_avatar {
@@ -317,4 +322,66 @@ header .container {
 .testimonial_title {
     color: var(--gray-blue);
     font-size: .8rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas: 'a b c d';
+}
+
+.gallery1 {
+    grid-area: a;
+}
+.gallery2 {
+    grid-area: b;
+}
+.gallery3 {
+    grid-area: c;
+}
+.gallery4 {
+    grid-area: d;
+}
+
+.footer {
+    background-color: #8fd6c8;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.footer-logo {
+    filter: invert(25%) sepia(79%) saturate(278%) hue-rotate(116deg) brightness(33%) contrast(92%);
+    margin-top: 3em;
+    width: 150px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 3em;
+    margin: 1.5em auto 3em;
+    width: fit-content;
+    list-style: none;
+    color: var(--dark-desat-cyan);
+}
+
+.footer-nav_item {
+    font-size:.8751rem;
+    cursor: pointer;
+}
+
+.social-nav {
+    display: flex;
+    gap: 1.5em;
+    margin: 0 auto 3em;
+    width: fit-content;
+    list-style: none;
+    color: var(--dark-desat-cyan);
+}
+
+.social-nav_item {
+    cursor: pointer;
+}
+
+.footer-nav_item:hover,
+.social-nav_item:hover {
+    color: var(--white);
 }
