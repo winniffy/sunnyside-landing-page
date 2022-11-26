@@ -401,6 +401,7 @@ header .container {
     /* hamburger styling */
     .hamburger {
         display: block;
+
     }
 
     .bar {
@@ -430,17 +431,31 @@ header .container {
         font-weight: 500;
         font-size: 1rem;
         flex-direction: column;
-        inset: 0 0 0 30%;
-        padding: min(30vh, 8em) 1.5em;
+        inset: 13% 5% 0 5%;
+        padding: min(30vh, 6em) 1.5em;
         background-color: var(--white);
-        height: 70%;
+        height: 60%;
         margin: 0;
         transition: 0.3s;
-        transform: translateX(100%);
+        transform: translateX(110%);
+        -webkit-clip-path: polygon(90% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+        clip-path: polygon(90% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+    }
+
+    .nav_item {
+        color: var(--very-dark-gray-blue);
+        font-size: 1.125rem;
     }
 
     .nav_list_group.active{
         transform: translateX(0%);
+    }
+
+    .contact_btn {
+        background-color: var(--yellow);
+        color: var(--very-dark-bluedark-blue);
+        border-radius: 30px;
+        font-size: 1rem;
     }
 
     .hero {
