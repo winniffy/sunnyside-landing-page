@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./https://github.com/winniffy/sunnyside-landing-page/blob/master/images/mysunnysidess.png)
+![](https://github.com/winniffy/sunnyside-landing-page/blob/master/images/mysunnysidess.png)
 
 ### Links
 
