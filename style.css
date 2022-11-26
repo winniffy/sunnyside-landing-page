@@ -30,7 +30,7 @@ body {
 .container {
     padding: 1em 0;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     max-width: 1440px;
 }
 
@@ -48,7 +48,8 @@ h2 {
 }
 
 header .container {
-    width: 90%;
+    width: 100%;
+    padding: 0;
 }
 
 .nav {
@@ -138,6 +139,7 @@ header .container {
     font-size: 3.5rem;
     letter-spacing: .2em;
     font-weight: 900;
+    margin-top: 1.35em;
 }
 
 .icon-arrow-down {
